@@ -1,5 +1,10 @@
 {
   "name": "halpert/halpert",
+  "autoload": {
+    "psr-4": {
+      "Halpert\\": "src"
+    }
+  },
   "require": {
     "php": ">= 7.0, < 8.0"
   },
