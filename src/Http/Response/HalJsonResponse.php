@@ -2,7 +2,7 @@
 
 namespace Halpert\Http\Response;
 
-use Halpert\Model\AbstractViewModel;
+use Halpert\Model\AbstractHalResource;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
@@ -13,11 +13,11 @@ class HalJsonResponse extends JsonResponse
 {
     /**
      * HalJsonResponse constructor.
-     * @param AbstractViewModel $model
+     * @param AbstractHalResource $model
      * @param int $status
      * @param array $headers
      */
-    public function __construct(AbstractViewModel $model, $status = 200, array $headers = [])
+    public function __construct(AbstractHalResource $model, $status = 200, array $headers = [])
     {
         $headers['Content-type'] = 'application/hal+json';
         parent::__construct($model, $status, $headers);
