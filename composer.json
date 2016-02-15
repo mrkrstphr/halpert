@@ -7,7 +7,7 @@
   },
   "require": {
     "php": ">= 7.0, < 8.0",
-    "mrkrstphr/common-paginator": "^0.1.0"
+    "mrkrstphr/common-paginator": "^0.2.0"
   },
   "require-dev": {
     "peridot-php/peridot": "^1.16",
