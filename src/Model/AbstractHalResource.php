@@ -44,9 +44,9 @@ abstract class AbstractHalResource implements JsonSerializable
 
     /**
      * @param string $key
-     * @param AbstractViewModel $embedded
+     * @param AbstractHalResource $embedded
      */
-    protected function addEmbeddedResource(string $key, AbstractViewModel $embedded)
+    protected function addEmbeddedResource(string $key, AbstractHalResource $embedded)
     {
         if (!array_key_exists($key, $this->embedded)) {
             $this->embedded[$key] = [];
